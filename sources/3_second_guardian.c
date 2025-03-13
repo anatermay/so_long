@@ -1,16 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   worldbuilding_content_validator.c                  :+:      :+:    :+:   */
+/*   3_second_guardian.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aternero <aternero@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 12:50:59 by aternero          #+#    #+#             */
-/*   Updated: 2025/03/13 11:29:37 by aternero         ###   ########.fr       */
+/*   Updated: 2025/03/13 13:49:03 by aternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../header_file/so_long.h"
+
+/*
+ * This file contains the implementation of functions for duplicating the map,
+ * checking for important elements, and validating the map's structure in the
+ * so_long game.
+ * 
+ * The main features of this code include:
+ * - mapdup: A function to create a duplicate of the map.
+ * - is_there_all_important_elements: A function to check if all necessary
+ *   elements (collectables, exits, and player position) are present in the map.
+ * - is_it_fenced: A function to check if the map is surrounded by walls.
+ * - mapval_content: A function to validate the map's content and structure.
+ * 
+ * Usage:
+ * - These functions are used internally by the so_long game to ensure the
+ *   map is valid and meets the required format before starting the game.
+ * 
+ * Dependencies:
+ * - This file depends on the so_long.h header file for type definitions and
+ *   function declarations.
+ * 
+ * Author: AnaTerMay
+ * Date: 13/03/2025
+ */
 
 char	**mapdup(t_map *map)
 {

@@ -1,17 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   worldbuilding_init.c                               :+:      :+:    :+:   */
+/*   2_the_world_architect.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aternero <aternero@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 12:19:18 by aternero          #+#    #+#             */
-/*   Updated: 2025/03/13 11:34:01 by aternero         ###   ########.fr       */
+/*   Updated: 2025/03/13 13:47:37 by aternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../header_file/so_long.h"
 #include "../resources/LIBFT/libft.h"
+
+/*
+ * This file contains the implementation of functions for initializing and
+ * validating the map structure in the so_long game.
+ * 
+ * The main features of this code include:
+ * - map_size_reinit: A function to reinitialize the map size and set the
+ *   coordinates for each point in the map.
+ * - map_init: A function to initialize a new map node and add it to the map
+ *   linked list.
+ * - mapval_gnl_continue_2: A function to read the map file line by line,
+ *   validate each line, and initialize the map structure.
+ * - mapval_gnl_continue: A function to open the map file and handle errors.
+ * - mapval_gnl: A function to manage the overall process of reading and
+ *   validating the map file.
+ * 
+ * Usage:
+ * - These functions are used internally by the so_long game to initialize
+ *   and validate the map structure before starting the game.
+ * 
+ * Dependencies:
+ * - This file depends on the so_long.h header file for type definitions and
+ *   function declarations.
+ * - It also depends on the LIBFT library for additional utility functions.
+ * 
+ * Author: AnaTerMay
+ * Date: 13/03/2025
+ */
 
 t_map	*map_size_reinit(t_map *map)
 {

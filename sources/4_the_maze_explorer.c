@@ -1,16 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   accesibility_algorithm.c                           :+:      :+:    :+:   */
+/*   4_the_maze_explorer.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aternero <aternero@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 10:58:15 by aternero          #+#    #+#             */
-/*   Updated: 2025/03/13 11:43:14 by aternero         ###   ########.fr       */
+/*   Updated: 2025/03/13 13:49:53 by aternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../header_file/so_long.h"
+
+/*
+ * This file contains the implementation of functions for checking the
+ * accessibility of elements in the map using a flood fill algorithm in the
+ * so_long game.
+ * 
+ * The main features of this code include:
+ * - recalculate_total_number: A function to count the occurrences of a specific
+ *   character in the map.
+ * - is_all_filled: A function to check if all important elements are accessible.
+ * - fill_check: A recursive function to mark accessible areas in the map.
+ * - player_init_position: A function to find the initial position of the player.
+ * - flood_fill_check: A function to perform the flood fill algorithm and
+ *   validate the accessibility of the map.
+ * 
+ * Usage:
+ * - These functions are used internally by the so_long game to ensure that all
+ *   important elements in the map are accessible before starting the game.
+ * 
+ * Dependencies:
+ * - This file depends on the so_long.h header file for type definitions and
+ *   function declarations.
+ * - It also depends on the LIBFT library for additional utility functions.
+ * 
+ * Author: AnaTerMay
+ * Date: 13/03/2025
+ */
 
 int	recalculate_total_number(char **map, char c)
 {

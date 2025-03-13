@@ -1,16 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   worldbuilding_validator.c                          :+:      :+:    :+:   */
+/*   1_the_first_guardian.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aternero <aternero@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 12:23:33 by aternero          #+#    #+#             */
-/*   Updated: 2025/03/13 11:29:45 by aternero         ###   ########.fr       */
+/*   Updated: 2025/03/13 13:46:25 by aternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../header_file/so_long.h"
+
+/*
+ * This file contains the implementation of functions for validating the map
+ * and counting specific elements in the so_long game.
+ * 
+ * The main features of this code include:
+ * - elements_calculator: A function to count the occurrences of a specific
+ *   character in the map.
+ * - mapval_rectangle: A function to check if the map is a rectangle and
+ *   contains valid characters.
+ * - mapval_ber: A function to validate the map file extension.
+ * - map_validator: The main function that validates the map file and its
+ *   contents.
+ * 
+ * Usage:
+ * - These functions are used internally by the so_long game to ensure the
+ *   map is valid and meets the required format before starting the game.
+ * 
+ * Dependencies:
+ * - This file depends on the so_long.h header file for type definitions and
+ *   function declarations.
+ * 
+ * Author: AnaTerMay
+ * Date: 13/03/2025
+ */
 
 int	elements_calculator(t_map *map, char c)
 {

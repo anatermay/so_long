@@ -138,3 +138,5 @@ echo "\n________________________________________________________________________
 rm -rf so_long_test
 rm -rf a.out
 cd resources/LIBFT; make fclean; cd ../..
+clean
+clear

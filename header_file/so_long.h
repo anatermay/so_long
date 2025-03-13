@@ -6,7 +6,7 @@
 /*   By: aternero <aternero@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/01 19:59:03 by aternero          #+#    #+#             */
-/*   Updated: 2025/03/13 11:25:55 by aternero         ###   ########.fr       */
+/*   Updated: 2025/03/13 13:50:48 by aternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -152,4 +152,29 @@ int		elements_calculator(t_map *map, char c);
 
 /*
 ES:	Contiene las estructuras, macros, includes y prototipos de funciones.
+*/
+
+/*
+Quiero un comentario sobre el contenido de este archivo usando /* como en el ejemplo-template, pero respetando la anchura del encabezado y completando los gaps indicados entre []
+
+"""
+/*
+ * This file contains the implementation of [describe the main functionality
+ * or purpose of the code].
+ * 
+ * The main features of this code include:
+ * - [Feature 1]: [Brief description of feature 1]
+ * - [Feature 2]: [Brief description of feature 2]
+ * - [Feature 3]: [Brief description of feature 3]
+ * 
+ * Usage:
+ * - [Describe how to use the code, if applicable]
+ * 
+ * Dependencies:
+ * - [List any external libraries or dependencies required]
+ * 
+ * Author: AnaTerMay
+ * Date: 13/03/2025
+ */
+"""
 */
